@@ -15,8 +15,8 @@ return new class extends Migration
                   ->restrictOnDelete();
             $table->string('nama_item');
             $table->decimal('harga', 10, 2);
-            $table->text('deskripsi')->nullable();
-            $table->string('gambar')->nullable();
+            $table->text('deskripsi')  ;
+            $table->string('gambar');
             $table->boolean('status')->default(true);
             $table->timestamps();
         });
